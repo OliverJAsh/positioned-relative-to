@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es2015",
+        "strict": true,
+        "noImplicitReturns": true,
+        "sourceMap": true,
+        "outDir": "./target/",
+        "rootDir": "./src/"
+    },
+    "files": ["./src/webpack.config.ts"]
+}

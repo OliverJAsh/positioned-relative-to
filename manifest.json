@@ -1,0 +1,7 @@
+{
+    "manifest_version": 2,
+    "name": "positioned-relative-to",
+    "version": "1.0.0",
+    "description": "A Chrome DevTools extension that displays the parent element which the selected element is positioned relative to.",
+    "devtools_page": "./target/index.html"
+}
