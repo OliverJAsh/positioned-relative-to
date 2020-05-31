@@ -12,8 +12,9 @@ npm run build
 ```bash
 mversion patch -m
 
-npm run zip
-
 git push
 git push --tags
+
+npm run build
+npm run zip
 ```
