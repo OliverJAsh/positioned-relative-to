@@ -33,7 +33,7 @@ const checkNodeIsContainingBlock = flow(
     O.exists(checkElementIsContainingBlock),
 );
 
-// TODO: OR `element === document`?
+// TODO: OR `node === document`?
 const checkNodeIsRoot = checkNodeInstanceOfDocument;
 
 const find = (node: Node | null): Node | null =>
