@@ -41,7 +41,9 @@ const find = (node: Node | null): Node | null =>
         ? node
         : find(node.parentNode);
 
-const findForSelectedNode = flow((node: Node) => node.parentNode, find);
+const getParentNode = (node: Node) => node.parentNode;
+
+const findForSelectedNode = flow(getParentNode, find);
 
 const getSelectedNodeOption = () => pipe($0, O.fromNullable);
 
