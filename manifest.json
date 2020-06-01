@@ -3,5 +3,9 @@
     "name": "positioned-relative-to",
     "version": "1.0.0",
     "description": "A Chrome DevTools extension that displays the parent element which the selected element is positioned relative to.",
-    "devtools_page": "./target/index.html"
+    "devtools_page": "./target/index.html",
+    "icons": {
+        "48": "icons/48.png",
+        "128": "icons/128.png"
+    }
 }
