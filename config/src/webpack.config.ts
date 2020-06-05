@@ -1,4 +1,5 @@
 import * as pathHelpers from 'path';
+import * as TerserPlugin from 'terser-webpack-plugin';
 import { Configuration } from 'webpack';
 
 // Expect `__dirname` to be `/config/target/`.
@@ -20,6 +21,18 @@ const RESOLVED_EXTENSIONS = [
 
 const config: Configuration = {
     mode: 'production',
+    optimization: {
+        minimizer: [
+            new TerserPlugin({
+                terserOptions: {
+                    mangle: false,
+                    output: {
+                        beautify: true,
+                    },
+                },
+            }),
+        ],
+    },
     entry: pathHelpers.resolve(SRC_PATH, ENTRY_FILENAME),
     output: {
         path: TARGET_PATH,
