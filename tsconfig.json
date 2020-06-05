@@ -1,6 +1,8 @@
 {
     "compilerOptions": {
-        "module": "commonjs",
+        // We need to feed ES Modules to webpack for tree shaking to work
+        "module": "ESNext",
+        "moduleResolution": "Node",
         "target": "es2015",
         "strict": true,
         "noImplicitReturns": true,
