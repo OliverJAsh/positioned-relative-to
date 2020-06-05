@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "build": "./build.sh",
-    "zip": "zip ./extension.zip ./target/ ./icons/ ./manifest.json",
+    "zip": "zip ./extension.zip ./target/* ./icons/* ./manifest.json",
     "format": "prettier --write './**/*.{ts,tsx,js,json,md}' '.prettierrc'"
   },
   "dependencies": {
