@@ -3,7 +3,7 @@ chrome.devtools.panels.elements.createSidebarPane(
     (sidebar) => {
         const update = () => {
             sidebar.setExpression(
-                '(() => {$MAIN_SCRIPT; return window.__POSITIONED_RELATIVE_TO__();})()',
+                `(() => {$MAIN_SCRIPT; return window.__POSITIONED_RELATIVE_TO__();})()`,
             );
         };
 
