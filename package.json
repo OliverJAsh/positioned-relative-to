@@ -13,7 +13,7 @@
   "devDependencies": {
     "@types/chrome": "^0.0.114",
     "@types/webpack": "^4.41.13",
-    "mversion": "^1.13.0",
+    "mversion": "^2.0.0",
     "prettier": "^2.0.5",
     "ts-loader": "^7.0.4",
     "typescript": "^3.9.3",
